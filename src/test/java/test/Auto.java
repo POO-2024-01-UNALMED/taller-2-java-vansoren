@@ -12,7 +12,10 @@ class Auto {
 		int cantidad=0;
 		for(Asiento i:asientos) {
 			if (i instanceof Asiento) {
-				cantidad++;
+				if (i!=null) {
+					cantidad++;
+				}
+				
 			}			
 		}
 		return cantidad;
