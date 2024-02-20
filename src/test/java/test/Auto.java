@@ -23,8 +23,10 @@ public class Auto {
 				if(this.registro!=asientos[i].registro && asientos[i]!=null) {
 					return "Las piezas no son originales";
 				}
+				else {
+					return "Auto original";
+				}
 			}
-		return "Auto original";
 		}
 		else {
 			return "Las piezas no son originales";
