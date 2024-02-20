@@ -9,13 +9,13 @@ public class Auto {
 	static int cantidadCreados;
 	
 	int cantidadAsientos() {
-		int cantidadAsientos=0;
-		for(Asiento i:this.asientos) {
-			if ( i!=null ) {
-				cantidadAsientos++;
+		int cantidad=0;
+		for(int i=0;i<asientos.length;i++) {
+			if ( asientos[i]!=null ) {
+				cantidad++;
 			}
 		}
-	return cantidadAsientos;
+	return cantidad;
 	}
 	String verificarIntegridad() {
 		if(this.registro==this.motor.registro) {
