@@ -1,5 +1,5 @@
 package test;
-class Auto {
+public class Auto {
 	String modelo;
 	int precio;
 	Asiento[] asientos;
@@ -11,9 +11,9 @@ class Auto {
 	int cantidadAsientos() {
 		int cantidad=0;
 		for(Asiento i:asientos) {
-				if (i!=null) {
-					cantidad++;
-				}
+			if ( i!=null ) {
+				cantidad++;
+			}
 		}
 		return cantidad;
 		
@@ -31,5 +31,4 @@ class Auto {
 			return "Las piezas no son originales";
 		}
 	}
-	
 }
